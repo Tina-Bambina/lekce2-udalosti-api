@@ -13,5 +13,19 @@ function priNajetiNaCtverec()
 {
 console.log('test' + pocitadlo);
 pocitadlo++;
-
 } 
+
+function budTucny()
+{
+ document.querySelector('.lev').style.fontWeight = 'bolder';
+}
+
+function cervenyPoKliknuti() //tady lepsi ten toggle
+{
+ document.querySelector('.lev').style.fontColor = 'red';
+}
+
+function zvetsiPismoOjednu()
+{
+document.querySelector('.lev').style.fontSize = fontSize++
+}
