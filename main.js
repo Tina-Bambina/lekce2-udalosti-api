@@ -22,10 +22,22 @@ function budTucny()
 
 function cervenyPoKliknuti() //tady lepsi ten toggle
 {
- document.querySelector('.lev').style.fontColor = 'red';
+ //document.querySelector('.lev').style.fontColor = 'red';
+ nadpis.classList = fontColor = 'red'
 }
 
 function zvetsiPismoOjednu()
 {
 document.querySelector('.lev').style.fontSize = fontSize++
+}
+
+function stiskKlavesy(udalost)
+{
+    console.log(udalost.key)
+}
+
+function startAudio()
+{let audioFile = document.getElementById('zvukovaStopa') 
+audioFile.play()
+console.log('zapinam pisen')
 }
