@@ -20,6 +20,11 @@ function budTucny()
  document.querySelector('.lev').style.fontWeight = 'bolder';
 }
 
+function nebudTucny()
+{
+ document.querySelector('.lev').style.fontWeight = 'initial';
+}
+
 function cervenyPoKliknuti() //tady lepsi ten toggle
 {
  //document.querySelector('.lev').style.fontColor = 'red';

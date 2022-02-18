@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>JavaScript a DOM</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-</head>
-<body onkeydown = "stiskKlavesy()">
 
-	<h1>Změna tříd, události</h1>
-	<p onmouseover = "budTucny() " class ="lev" style = "font-size: 16px"; >	
+</head>
+<body>
+
+
+	<p onmouseover = "budTucny() " onmouseout = "nebudTucny()" class ="lev" style = "font-size: 16px"; >	
 
 		UKOL: V ELIPSE SPI LEV</p>
 
 		<button onclick = "cervenyPoKliknuti()" class="tlacitko">červený po kliknutí</button>
 		<button onclick = "zvetsiPismoOjednu()" class="tlacitko">větší po kliknutí</button>
 
-
-	<div onmouseover = "priNajetiNaCtverec()" class="ctverecek zluty"></div>
-
-	<div class="ctverecek zeleny"></div>
-
-	<img class="obrazek" src="obrazky/kocka.jpg">
-
-	<button class="tlacitko">Čudlajs</button>
+	</p>
+	<p>	UKOL: AUDIO</p>
 
 	<audio id = "zvukovaStopa" src="audio/dingdingdang.mp3" preload="auto"></audio>
 	<button onClick = "startAudio()"  class = audiTlacitko >Zapni Audio</button>
+	<button onClick = "startAudio()"  class = audiTlacitko >Pauzni Audio</button>
+	<button onClick = "startAudio()"  class = audiTlacitko >Ztiš Audio</button>
+	<button onClick = "startAudio()"  class = audiTlacitko >Audio Normalni hlasitost</button>
+	<button onClick = "startAudio()"  class = audiTlacitko >Zapni Maximalni hlasitost</button>
+	<button onClick = "startAudio()"  class = audiTlacitko >Vrat na zacatek Audio</button>
+
+	<div onmouseover = "priNajetiNaCtverec()" class="ctverecek zluty"></div>
 
 	<script type = "text/javascript"  src = "main.js"></script>
 
