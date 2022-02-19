@@ -4,29 +4,50 @@
 
 </head>
 <body>
+	<p>	
 
+		UKOL z TYDNE 1:
+
+
+	</p>
 
 	<p onmouseover = "budTucny() " onmouseout = "nebudTucny()" class ="lev" style = "font-size: 16px"; >	
 
-		UKOL: V ELIPSE SPI LEV</p>
+		UKOL: V ELIPSE SPI LEV
+		<div>
+			<button onclick = "cervenyPoKliknuti()" class="tlacitko">červený po kliknutí</button>
+			<button onclick = "zvetsiPismoOjednu()" class="tlacitko">větší po kliknutí</button>
+		</div>
 
-		<button onclick = "cervenyPoKliknuti()" class="tlacitko">červený po kliknutí</button>
-		<button onclick = "zvetsiPismoOjednu()" class="tlacitko">větší po kliknutí</button>
 
 	</p>
 	<p>	UKOL: AUDIO</p>
 
+	<div>
 	<audio id = "zvukovaStopa" src="audio/dingdingdang.mp3" preload="auto"></audio>
-	<button onClick = "startAudio()"  class = audiTlacitko >Zapni Audio</button>
-	<button onClick = "startAudio()"  class = audiTlacitko >Pauzni Audio</button>
-	<button onClick = "startAudio()"  class = audiTlacitko >Ztiš Audio</button>
-	<button onClick = "startAudio()"  class = audiTlacitko >Audio Normalni hlasitost</button>
-	<button onClick = "startAudio()"  class = audiTlacitko >Zapni Maximalni hlasitost</button>
-	<button onClick = "startAudio()"  class = audiTlacitko >Vrat na zacatek Audio</button>
+	<button onclick = "startAudio()"  class = audiTlacitko >Zapni Audio</button>
+	<button onclick = "pauzaAudio()"  class = audiTlacitko >Pauzni Audio</button>
+	<button onclick = "muteAudio()"  class = audiTlacitko >Ztiš Audio</button>
+	<button onclick = "normalAudio()"  class = audiTlacitko >Audio Normalni hlasitost</button>
+	<button onclick = "loudAudio()"  class = audiTlacitko >Zapni Maximalni hlasitost</button>
+	<button onclick = "backToStartAudio()"  class = audiTlacitko >Vrat na zacatek Audio</button>
 
-	<div onmouseover = "priNajetiNaCtverec()" class="ctverecek zluty"></div>
+	</div>
+
+ 	<div onmouseover = "priNajetiNaCtverec()" class="ctverecek zluty"></div>
 
 	<script type = "text/javascript"  src = "main.js"></script>
+
+
+	<p>
+	 POZNAMKA: chyby o kterych vim: 1. michani anglictiny a cestiny.
+	</p>
+	<p>
+	2. delani commitu aniz bych mela ucelene celky, 
+	</p>
+	<p>
+	(hlavne tady je cast ukladana jeste z hodiny a potom, kdyz jsem se na to divala sama, tak verim, ze je to neporadek, ale to se snad podda s praxi)
+	</p>
 
 </body>
 </html>

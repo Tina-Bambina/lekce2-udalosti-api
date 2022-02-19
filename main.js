@@ -1,4 +1,5 @@
-// tady je místo pro náš program
+
+/* poznamky souvisejici s hodinou:
 console.log('Ahj jsem nalinikoivan')
 
 let nadpis = document.querySelector('h1');
@@ -14,6 +15,7 @@ function priNajetiNaCtverec()
 console.log('test' + pocitadlo);
 pocitadlo++;
 } 
+*/ 
 
 function budTucny()
 {
@@ -25,24 +27,56 @@ function nebudTucny()
  document.querySelector('.lev').style.fontWeight = 'initial';
 }
 
-function cervenyPoKliknuti() //tady lepsi ten toggle
+function cervenyPoKliknuti() 
 {
- //document.querySelector('.lev').style.fontColor = 'red';
- nadpis.classList = fontColor = 'red'
+
+ ('.lev').classList.toggle = fontColor = 'red';
 }
 
 function zvetsiPismoOjednu()
 {
-document.querySelector('.lev').style.fontSize = fontSize++
+document.querySelector('.lev').style.fontSize = fontSize++;
 }
 
 function stiskKlavesy(udalost)
 {
-    console.log(udalost.key)
+    console.log(udalost.key);
 }
 
 function startAudio()
-{let audioFile = document.getElementById('zvukovaStopa') 
-audioFile.play()
-console.log('zapinam pisen')
+{let audioFile = document.getElementById('zvukovaStopa');
+audioFile.play();
+console.log('zapinam pisen');
+}
+
+function pauzaAudio()
+{let audioFile = document.getElementById('zvukovaStopa');
+audioFile.pause();
+console.log('prerusuji pisen');
+}
+
+function muteAudio()
+{
+document.getElementById('zvukovaStopa').volume = 0.0;
+console.log('mutuji pisen');
+}
+
+function normalAudio()
+{
+document.getElementById('zvukovaStopa').volume = 0.5;
+console.log('normalni pisen');
+}
+
+function loudAudio()
+{
+document.getElementById('zvukovaStopa').volume  = 1.0;
+console.log('nahlas pisen');
+}
+
+function backToStartAudio()
+{
+let audioFile = document.getElementById('zvukovaStopa') ;
+audioFile.load();
+audioFile.play();
+console.log('zpatky pisen');
 }
