@@ -19,23 +19,34 @@ pocitadlo++;
 
 function budTucny()
 {
- document.querySelector('.lev').style.fontWeight = 'bolder';
+    document.querySelector('.lev').style.fontWeight = 'bolder';
 }
 
 function nebudTucny()
 {
- document.querySelector('.lev').style.fontWeight = 'initial';
+    document.querySelector('.lev').style.fontWeight = 'initial';
 }
 
 function cervenyPoKliknuti() 
 {
+    document.querySelector('.lev').style.color = 'red';
 
- ('.lev').classList.toggle = fontColor = 'red';
+   // zkousela jsem i toggle, ale nevedela jsem jak tomu rict, aby to pracovalo s barvou, takze to jen zcervena a uz to neumim dat na cerne nazpatek
+
+   // let cervenyNadpis = document.querySelector('.lev');
+   // cervenyNadpis.classList.toggle(???) 
 }
+
 
 function zvetsiPismoOjednu()
 {
-document.querySelector('.lev').style.fontSize = fontSize++;
+   zvetsi = document.getElementById('napis');
+   style = window.getComputedStyle(zvetsi, null).getPropertyValue('font-size');
+   currentSize = parseFloat(style);
+   zvetsi.style.fontSize = (currentSize + 1) + 'px';
+
+    //tak tady musel pomoci stackoverflow :D Zkousela jsem neco ve stylu  document.getElementById('napis').style.fontSize = document.fontSize++;
+    //ale nechtelo se mi to chytit
 }
 
 function stiskKlavesy(udalost)
@@ -44,39 +55,41 @@ function stiskKlavesy(udalost)
 }
 
 function startAudio()
-{let audioFile = document.getElementById('zvukovaStopa');
-audioFile.play();
-console.log('zapinam pisen');
+{
+    let audioFile = document.getElementById('zvukovaStopa');
+    audioFile.play();
+    console.log('zapinam pisen');
 }
 
 function pauzaAudio()
-{let audioFile = document.getElementById('zvukovaStopa');
-audioFile.pause();
-console.log('prerusuji pisen');
+{
+    let audioFile = document.getElementById('zvukovaStopa');
+    audioFile.pause();
+    console.log('prerusuji pisen');
 }
 
 function muteAudio()
 {
-document.getElementById('zvukovaStopa').volume = 0.0;
-console.log('mutuji pisen');
+    document.getElementById('zvukovaStopa').volume = 0.0;
+    console.log('mutuji pisen');
 }
 
 function normalAudio()
 {
-document.getElementById('zvukovaStopa').volume = 0.5;
-console.log('normalni pisen');
+    document.getElementById('zvukovaStopa').volume = 0.5;
+    console.log('normalni pisen');
 }
 
 function loudAudio()
 {
-document.getElementById('zvukovaStopa').volume  = 1.0;
-console.log('nahlas pisen');
+    document.getElementById('zvukovaStopa').volume  = 1.0;
+    console.log('nahlas pisen');
 }
 
 function backToStartAudio()
 {
-let audioFile = document.getElementById('zvukovaStopa') ;
-audioFile.load();
-audioFile.play();
-console.log('zpatky pisen');
+    let audioFile = document.getElementById('zvukovaStopa') ;
+    audioFile.load();
+    audioFile.play();
+    console.log('zpatky pisen');
 }
