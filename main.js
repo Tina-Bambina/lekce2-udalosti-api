@@ -29,12 +29,9 @@ function nebudTucny()
 
 function cervenyPoKliknuti() 
 {
-    document.querySelector('.lev').style.color = 'red';
+    document.getElementById('napis').style.color = 'red'
 
-   // zkousela jsem i toggle, ale nevedela jsem jak tomu rict, aby to pracovalo s barvou, takze to jen zcervena a uz to neumim dat na cerne nazpatek
-
-   // let cervenyNadpis = document.querySelector('.lev');
-   // cervenyNadpis.classList.toggle(???) 
+   // jen zcervena a uz to neumim dat na cerne nazpatek, na toggle jsem neprisla
 }
 
 
